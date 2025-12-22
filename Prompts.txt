@@ -1,0 +1,67 @@
+Act as a cloud security engineer with 15 years of exp and assume I am a student getting into cybersec. I want you to guide me step by step through a VM-based subnetting lab where I set up two virtual machines in different subnets, assign IP addresses, test connectivity with ping, and explore routing and ARP tables. Explain each step clearly, tell me which commands to run, what outputs to expect, why certain pings succeed or fail, and give me questions to think about so I fully understand how subnet masks and routing work in practice
+
+This is the project outline
+
+Project 1 — VM Subnetting Playground (Real OS)
+
+Goal: Understand subnet masks and how devices in different subnets communicate.
+
+Tools needed (free):
+
+2 small VMs (VirtualBox or VMware) running Linux (Ubuntu Desktop or Server) or Windows.
+
+Terminal / CMD / PowerShell.
+
+Time & difficulty: ~1–2 hours, easy.
+
+Step-by-step
+
+Pick a base network: 192.168.1.0/24.
+
+Calculate smaller subnets:
+
+/25 → 2 subnets → usable hosts 126 per subnet
+
+/26 → 4 subnets → usable hosts 62 per subnet
+
+/27 → 8 subnets → usable hosts 30 per subnet
+
+Assign VM IPs in different subnets:
+
+VM-A: 192.168.1.10/26 (Subnet: 192.168.1.0/26)
+
+VM-B: 192.168.1.70/26 (Subnet: 192.168.1.64/26)
+
+Test connectivity:
+
+ping within the same subnet → should succeed
+
+ping across subnets → fails (no router configured)
+
+Observe ARP tables & routing:
+
+Linux: ip addr, ip route, arp -n
+
+Windows: ipconfig, route print, arp -a
+
+What you learn
+
+Calculate network, broadcast, usable addresses.
+
+See subnet masks in action.
+
+Why devices in different subnets can’t communicate directly.
+
+Description (10th-grade)
+A subnet mask shows which part of the IP is the network and which is the device. Devices in different subnets need a router to talk.
+
+Real-life example:
+School separates student devices from teacher devices using subnets.
+
+Hypothetical:
+Phone in subnet A cannot reach laptop in subnet B unless routed.
+
+Analogy:
+A subnet is like a floor in a building — each floor has rooms (hosts). You need stairs (router) to visit another floor.
+
+Lets go with this project step by step, as in tell me one step at a time
