@@ -1,3 +1,9 @@
 2025-12-22
 Today I just set up the GitHub, made the Diagram for the project and made the TXT files for the logs of the project. 
 I learned how to use Git locally to publish to my repo in GitHub 
+
+2025-12-26
+Today I downloaded ubuntu virtual machines on virtual box and I got them set up, I also wrote down the git commands to memorize them and it seems to be working.
+
+One of the vms are terminal only and one is gui but for now thats alright because im learning how to deal with a server and a client.
+
