@@ -7,3 +7,5 @@ Today I downloaded ubuntu virtual machines on virtual box and I got them set up,
 
 One of the vms are terminal only and one is gui but for now thats alright because im learning how to deal with a server and a client.
 
+2025-12-27
+I set up the static ip addresses on VM a
