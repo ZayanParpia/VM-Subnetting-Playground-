@@ -9,3 +9,6 @@ One of the vms are terminal only and one is gui but for now thats alright becaus
 
 2025-12-27
 I set up the static ip addresses on VM a
+
+2025-12-30
+I set up the static ip address on Vm B
