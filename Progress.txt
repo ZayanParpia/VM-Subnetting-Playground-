@@ -12,3 +12,6 @@ I set up the static ip addresses on VM a
 
 2025-12-30
 I set up the static ip address on Vm B
+
+2026-01-01
+I decided to move this project to the cloud since for more cloud exposure
